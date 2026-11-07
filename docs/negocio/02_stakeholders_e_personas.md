@@ -1,61 +1,66 @@
-# Personas
+# Passo 2 — Stakeholders e Personas do SmartDesk
 
-## 1. Ana Martins, 32 anos, assistente administrativa
-**Função e contexto:** Trabalha no departamento de administração, na sede. Usa o computador todo o dia e pede apoio de TI quando algo falha.
+**Objetivo:** Identificar os três utilizadores principais do SmartDesk, compreender as suas dificuldades e determinar as funcionalidades necessárias.
 
-**Objetivo com o SmartDesk:** Pedir ajuda de forma rápida e saber em que ponto está o pedido, sem ter de perguntar a ninguém.
+## 1. Ana Martins — Colaboradora
 
-**Dificuldades atuais:**
-- Não sabe se o pedido chegou à equipa de TI.
-- Tem de repetir o problema por telefone ou mensagem.
+- **Idade:** 32 anos
+- **Função:** Assistente administrativa
+- **Contexto:** Trabalha na área administrativa da NexaServ e necessita de apoio informático para realizar as suas tarefas.
 
-**Necessidades na aplicação:**
-1. Criar um ticket indicando a categoria (Equipamento, Software ou Acessos) e uma descrição.
-2. Consultar o estado dos seus tickets.
-3. Ver as atualizações e notas sobre o seu pedido.
-
-## 2. Miguel Costa, 29 anos, técnico de suporte
-**Função e contexto:** Faz parte da equipa de TI. Resolve problemas de equipamento, software e acessos dos colaboradores.
-
-**Objetivo com o SmartDesk:** Saber exatamente o que tem para tratar e registar o que já fez.
+**Objetivo:** Comunicar problemas informáticos e acompanhar a sua resolução sem ter de contactar repetidamente a equipa de TI.
 
 **Dificuldades atuais:**
-- Pedidos perdem-se entre a caixa de correio partilhada e a folha de cálculo.
-- Nem sempre é claro quais os pedidos que são seus.
+- Não sabe se o seu pedido foi recebido e registado.
+- Tem dificuldade em saber quando o problema estará resolvido.
 
 **Necessidades na aplicação:**
-1. Ver a lista de tickets que lhe foram atribuídos.
-2. Alterar o estado do ticket (Em tratamento, Resolvido).
-3. Registar notas sobre o que foi feito.
+1. Criar tickets com descrição do problema e categoria.
+2. Consultar os seus pedidos e respetivos estados.
+3. Consultar a informação sobre a resolução.
 
-## 3. Sofia Almeida, 43 anos, responsável de TI
-**Função e contexto:** Lidera a equipa de TI, com três técnicos. Responde pela organização do trabalho e pela qualidade do apoio.
+## 2. Miguel Costa — Técnico de suporte
 
-**Objetivo com o SmartDesk:** Ter uma visão clara do trabalho da equipa e garantir que nenhum pedido fica sem responsável.
+- **Idade:** 29 anos
+- **Função:** Técnico de suporte
+- **Contexto:** Integra a equipa de três técnicos de TI da NexaServ e resolve problemas informáticos comunicados pelos colaboradores.
+
+**Objetivo:** Organizar os pedidos atribuídos e acompanhar o trabalho até à resolução.
 
 **Dificuldades atuais:**
-- A folha de cálculo não dá uma visão fiável do que está pendente.
-- É difícil acompanhar a resolução dos pedidos.
+- Os pedidos estão dispersos por emails e mensagens.
+- Nem sempre é claro quais os pedidos que lhe foram atribuídos.
 
 **Necessidades na aplicação:**
-1. Ver todos os tickets, filtrados por estado e por categoria.
-2. Atribuir tickets aos técnicos e ver a carga de cada um.
-3. Acompanhar a evolução de cada ticket até ao fecho.
+1. Consultar os tickets que lhe estão atribuídos.
+2. Atualizar o estado dos tickets durante o tratamento.
+3. Registar a resolução e marcar os tickets como resolvidos.
 
-## Relação entre personas e funcionalidades
+## 3. Sofia Almeida — Responsável de TI
 
-| Funcionalidade | Ana (colaboradora) | Miguel (técnico) | Sofia (responsável) |
-|---|---|---|---|
-| Criar ticket com categoria e descrição | ✓ | | |
-| Consultar os seus próprios tickets | ✓ | | |
-| Ver atualizações e notas de um ticket | ✓ | ✓ | ✓ |
-| Ver os tickets atribuídos a si | | ✓ | |
-| Alterar o estado do ticket | | ✓ | |
-| Registar notas no ticket | | ✓ | |
-| Ver todos os tickets, filtrados por estado e categoria | | | ✓ |
-| Atribuir tickets e ver a carga por técnico | | | ✓ |
-| Fechar ticket | a decidir | a decidir | a decidir |
+- **Idade:** 43 anos
+- **Função:** Responsável de TI
+- **Contexto:** Coordena os três técnicos de suporte e supervisiona os pedidos informáticos dos colaboradores da NexaServ.
 
-## Decisões pendentes
-- **Atribuição:** só a Sofia atribui tickets ou os técnicos também podem atribuir?
-- **Fecho:** quem fecha um ticket resolvido (colaborador, técnico ou responsável)?
+**Objetivo:** Garantir que os pedidos são atribuídos, acompanhados e resolvidos de forma organizada.
+
+**Dificuldades atuais:**
+- Não dispõe de uma visão centralizada do trabalho da equipa.
+- Tem dificuldade em acompanhar as atribuições e os pedidos pendentes.
+
+**Necessidades na aplicação:**
+1. Consultar todos os tickets e respetivos estados.
+2. Atribuir e reatribuir tickets aos técnicos.
+3. Acompanhar as resoluções e gerir o fecho dos tickets.
+
+## 4. Relação entre personas e funcionalidades
+
+| Persona | Funcionalidades necessárias |
+|---|---|
+| **Ana Martins** — Colaboradora | Criar tickets; consultar os próprios tickets; acompanhar estados e resoluções. |
+| **Miguel Costa** — Técnico de suporte | Consultar tickets atribuídos; atualizar estados; registar resoluções. |
+| **Sofia Almeida** — Responsável de TI | Consultar todos os tickets; atribuir e reatribuir técnicos; supervisionar resoluções e gerir fechos. |
+
+## 5. Pontos para decisões posteriores
+
+As personas permitem identificar necessidades, mas ainda será necessário detalhar as regras de permissões, a informação obrigatória dos tickets e as condições para alterar os seus estados. Essas decisões serão tratadas nas etapas de requisitos.
